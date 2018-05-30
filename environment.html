@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kudos – helping increase the reach and impact of research</title>
+  <link href="https://www.growkudos.com/images/favicon.ico" rel="icon" type="image/ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body style="background-color: #f2f2f2; margin: 0;font-family: 'Open Sans',Arial, sans-serif;">
+  <div style="background-color: #ffffff; display: fixed; top: 0; left: 0;width: 100%;border-bottom: 3px solid #337ab7;">
+    <img src="logo.png" onclick="window.location.href = '/';" style="margin-left: 210px;height: 38px;margin-bottom: 10px;display: inline;"><div style="float: right;margin-right: 200px;margin-top: 10px;"><img src="profile.jpg" style="height: 30px;border-radius: 50%;display: inline;">&nbsp;<h2 style="font-size: 15px;display: inline;">David Sommer</h2>
+&#65372;<h2 style="font-size: 15px;display: inline;">Menu &nbsp;<i class="fas fa-bars"></i></h2></div>
+  </div>
+  <div style="text-align: center; width: 100%;">
+    <div style="width: 50%; text-align: center;display: inline-block;">
+      <br>
+      <input type="text" style="padding-left: 10px;width: 70%;display: inline; border-radius: 5px; border: 1px solid #dce5f2;height: 50px;font-size: 25px;font-weight: 300;" placeholder="Search Kudos for..." noshade>&nbsp;&nbsp;&nbsp;<button style="border-radius: 5px; color: #fff; display: inline;background-color: #337ab7; height: 50px;width: 10%;font-size: 25px;">Go</button>
+      <br>
+      <br>
+    </div>
+    <hr style="color: #d8d8d8;margin: 0;">
+    <div style="background-color: #ffffff;padding: 10px 0;">
+      <div style="text-align: left; margin-left: 200px;">
+        <div class="dropdown" style="display: inline-block;">
+          <button style="font-size: 20px;font-weight: 300;display: inline-block;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Environment
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">All Subjects</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="medicine.html">Medicine</a>
+            <a class="dropdown-item">Life Sciences</a>
+            <a class="dropdown-item">Technology</a>
+            <a class="dropdown-item" style="background-color: #e9e9e9;">Environment</a>
+            <a class="dropdown-item">Arts</a>
+            <a class="dropdown-item">Humanities</a>
+            <a class="dropdown-item">Social Sciences</a>
+            <a class="dropdown-item" href="physical_sciences.html">Physical Sciences</a>
+          </div>
+        </div>
+        <div style="width: 50px;display: inline-block;"></div>
+        <div class="dropdown" style="display: inline-block;">
+          <button style="font-size: 20px;font-weight: 300;display: inline-block;" id="sortBy" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Most Viewed
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id="viewed" style="cursor: pointer;">Most Viewed</a>
+            <a class="dropdown-item">Featured</a>
+            <a class="dropdown-item">Staff Picks</a>
+            <a class="dropdown-item" id="surprise" style="cursor: pointer;">Surprise Me!</a>
+          </div>
+        </div>
+        <div style="width: 50px;display: inline-block;"></div>
+        <div class="dropdown" style="display: inline-block;">
+          <button style="font-size: 20px;font-weight: 300;display: inline-block;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Worldwide
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Worldwide</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">America</a>
+            <a class="dropdown-item" href="#">Europe</a>
+            <a class="dropdown-item" href="#">Middle East</a>
+            <a class="dropdown-item" href="#">Asia</a>
+            <a class="dropdown-item" href="#">Africa</a>
+          </div>
+        </div>
+        <div style="width: 50px;display: inline-block;"></div>
+        <div class="dropdown" style="display: inline-block;float: right;margin-right: 200px;">
+          <button style="font-size: 20px;font-weight: 300;display: inline-block;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Additional Filters
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">No Filter</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Filter 1</a>
+            <a class="dropdown-item" href="#">Filter 2</a>
+            <a class="dropdown-item" href="#">Filter 3</a>
+            <a class="dropdown-item" href="#">Filter 4</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="color: #d8d8d8;margin: 0;">
+    <br>
+    <br>
+    <style>
+      body {
+        --height: 360px;
+      }
+
+      .dropdown-toggle {
+        background-color: #fff;
+      }
+
+      .card {
+        border: 1px solid #d8d8d8;
+        width: 30%;
+        /* height: var(--height); */
+        height: auto;
+        margin: 0;
+        display: inline;
+        text-align: left;
+        border-radius: 5px;
+
+      }
+
+      .card img {
+        width: 100%;
+        height: calc(var(--height) / 3);
+        object-fit: cover;
+        padding: 0;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .card .txt {
+        padding: 10px;
+        height: 140px;
+      }
+
+      .card .txt h1 {
+        font-weight: bold;
+        color: #ed5c25;
+        font-size: 15px;
+      }
+
+      .card .txt p {
+        color: #000;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .card hr {
+        margin: 0;
+      }
+
+      .card .footer h1 {
+        margin: 10px;
+        font-size: 15px;
+        display: inline;
+        height: 50px;
+      }
+
+      button {
+        border: none;
+      }
+
+      .card .footer {
+        padding: 5px;
+        width: 100%;
+        height: 35px;
+      }
+
+
+
+      #cards {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+
+    </style>
+    <div style="max-width: 1300px;margin-left: auto; margin-right: auto;" id="articles">
+    </div>
+  </div>
+  <script>
+    $("#change").click(function () {
+       if ($("#change").attr("class") == "far fa-thumbs-up") {
+         $("#change").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change2").click(function () {
+       if ($("#change2").attr("class") == "far fa-bookmark") {
+         $("#change2").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change2").attr("class", "far fa-bookmark");
+       }
+    })
+
+    $("#change3").click(function () {
+       if ($("#change3").attr("class") == "far fa-thumbs-up") {
+         $("#change3").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change3").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change4").click(function () {
+       if ($("#change4").attr("class") == "far fa-bookmark") {
+         $("#change4").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change4").attr("class", "far fa-bookmark");
+       }
+    })
+
+    $("#change5").click(function () {
+       if ($("#change5").attr("class") == "far fa-thumbs-up") {
+         $("#change5").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change5").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change6").click(function () {
+       if ($("#change6").attr("class") == "far fa-bookmark") {
+         $("#change6").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change6").attr("class", "far fa-bookmark");
+       }
+    })
+
+    $("#change7").click(function () {
+       if ($("#change7").attr("class") == "far fa-thumbs-up") {
+         $("#change7").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change7").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change8").click(function () {
+       if ($("#change8").attr("class") == "far fa-bookmark") {
+         $("#change8").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change8").attr("class", "far fa-bookmark");
+       }
+    })
+
+    $("#change9").click(function () {
+       if ($("#change9").attr("class") == "far fa-thumbs-up") {
+         $("#change9").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change9").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change10").click(function () {
+       if ($("#change10").attr("class") == "far fa-bookmark") {
+         $("#change10").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change10").attr("class", "far fa-bookmark");
+       }
+    })
+
+    $("#change11").click(function () {
+       if ($("#change11").attr("class") == "far fa-thumbs-up") {
+         $("#change11").attr("class", "fas fa-thumbs-up");
+       } else {
+         $("#change11").attr("class", "far fa-thumbs-up");
+       }
+    })
+
+    $("#change12").click(function () {
+       if ($("#change12").attr("class") == "far fa-bookmark") {
+         $("#change12").attr("class", "fas fa-bookmark");
+       } else {
+         $("#change12").attr("class", "far fa-bookmark");
+       }
+    })
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    function range(start, stop, step) {
+        if (typeof stop == 'undefined') {
+            // one param defined
+            stop = start;
+            start = 0;
+        }
+
+        if (typeof step == 'undefined') {
+            step = 1;
+        }
+
+        if ((step > 0 && start >= stop) || (step < 0 && start <= stop)) {
+            return [];
+        }
+
+        var result = [];
+        for (var i = start; step > 0 ? i < stop : i > stop; i += step) {
+            result.push(i);
+        }
+
+        return result;
+    };
+
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDrD8ssLoG3O9MaDGPzv1SSvRgU_IKRTkg",
+      authDomain: "kudos-showcase.firebaseapp.com",
+      databaseURL: "https://kudos-showcase.firebaseio.com",
+      projectId: "kudos-showcase",
+      storageBucket: "kudos-showcase.appspot.com",
+      messagingSenderId: "44944346463"
+    };
+    firebase.initializeApp(config);
+
+    firebase.database().ref("Articles/Environment").orderByChild("Kudos_Views").once("value").then(function(snapshot) {
+      val = snapshot.val()
+
+      function getThree(startOn) {
+        val1 = "Env" + startOn;
+        val2 = "Env" + (startOn + 1);
+        val3 = "Env" + (startOn + 2);
+        abc1 = val[val1];
+        abc2 = val[val2];
+        abc3 = val[val3];
+        return [abc1, abc2, abc3]
+
+      }
+
+      String.prototype.trunc =
+       function( n, useWordBoundary ){
+           if (this.length <= n) { return this; }
+           var subString = this.substr(0, n-1);
+           return (useWordBoundary
+              ? subString.substr(0, subString.lastIndexOf(' '))
+              : subString) + "&hellip;";
+        };
+
+      outOfThree = 1
+      for (x=1;x<25;x++) {
+        if (outOfThree == 1) {
+          // Do Something
+          three = getThree(x)
+          a1 = three[0]
+          a2 = three[1]
+          a3 = three[2]
+
+          a1img = "https://firebasestorage.googleapis.com/v0/b/kudos-showcase.appspot.com/o/" + a1.ImgUrl + ".jpg?alt=media";
+          a2img = "https://firebasestorage.googleapis.com/v0/b/kudos-showcase.appspot.com/o/" + a2.ImgUrl + ".jpg?alt=media";
+          a3img = "https://firebasestorage.googleapis.com/v0/b/kudos-showcase.appspot.com/o/" + a3.ImgUrl + ".jpg?alt=media";
+
+          a1title = a1.Title.trunc(70, true)
+          a2title = a2.Title.trunc(70, true)
+          a3title = a3.Title.trunc(70, true)
+
+          a1sum = a1.Summary.trunc(170, true)
+          a2sum = a2.Summary.trunc(170, true)
+          a3sum = a3.Summary.trunc(170, true)
+
+          a1views = a1.Kudos_Views
+          a2views = a2.Kudos_Views
+          a3views = a3.Kudos_Views
+
+          a1likes = a1.likes
+          a2likes = a2.likes
+          a3likes = a3.likes
+
+          a1url = "https://www.growkudos.com/articles/" + a1.DOI
+          a2url = "https://www.growkudos.com/articles/" + a2.DOI
+          a3url = "https://www.growkudos.com/articles/" + a3.DOI
+
+          $("#articles").append(`
+            <div style="text-align: center;">
+              <div id="cards">
+                <div class="card">
+                  <img src="` + a1img + `" alt="">
+                  <div class="txt">
+                    <h1>` + a1title + `</h1>
+                    <p>` + a1sum + `</p>
+                  </div>
+                  <hr>
+                  <div class="footer">
+                    <h1><i id="change" class="far fa-thumbs-up"></i> ` + a1likes + ` <i style="margin-left: 30px;" class="far fa-eye"></i> ` + a1views + ` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="change2" class="far fa-bookmark"></i><button onclick="window.open('` + a1url + `');" style="height: 25px; width: 60px;color: #fff; border-radius: 5px; background-color: #4472C4;float: right;font-size: 13px; ">Read</button></h1>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="` + a2img + `" alt="">
+                  <div class="txt">
+                    <h1>` + a2title + `</h1>
+                    <p>` + a2sum + `</p>
+                  </div>
+                  <hr>
+                  <div class="footer">
+                    <h1><i id="change3" class="far fa-thumbs-up"></i> ` + a2likes + ` <i style="margin-left: 30px;" class="far fa-eye"></i> ` + a2views + ` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="change4" class="far fa-bookmark"></i><button onclick="window.open('` + a2url + `');" style="height: 25px; width: 60px;color: #fff; border-radius: 5px; background-color: #4472C4;float: right;font-size: 13px; ">Read</button></h1>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="` + a3img + `" alt="">
+                  <div class="txt">
+                    <h1>` + a3title + `</h1>
+                    <p>` + a3sum + `</p>
+                  </div>
+                  <hr>
+                  <div class="footer">
+                    <h1><i id="change5" class="far fa-thumbs-up"></i> ` + a3likes + ` <i style="margin-left: 30px;" class="far fa-eye"></i> ` + a3views + ` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="change6" class="far fa-bookmark"></i><button onclick="window.open('` + a3url + `');" style="height: 25px; width: 60px;color: #fff; border-radius: 5px; background-color: #4472C4;float: right;font-size: 13px; ">Read</button></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>`)
+
+
+          outOfThree++;
+        } else {
+          outOfThree++;
+        }
+
+        if (outOfThree == 4) {
+          outOfThree = 1;
+        }
+
+      }
+    });
+  </script>
+</body>
+</html>
